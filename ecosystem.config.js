@@ -2,7 +2,7 @@ module.exports = {
     apps: [
         {
             name: "api-wpp-ima",
-            script: "npx tsm ./src/app.ts",
+            script: "dist/app.js",
             watch: false,
             max_memory_restart: '1000M',
             exce_mode: "cluster",
