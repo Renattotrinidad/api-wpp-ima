@@ -19,13 +19,14 @@ const main = async () => {
           const body = req.body
           const message = body.message
           const mediaUrl = body.mediaUrl
-          //console.log(body)
+          const phone = body.phone
+        //   console.log(body)
           //await bot.sendMessage('573016083120', 'mensaje tukusito1!', {})
-          await bot.sendMessage(process.env.NUMBER.toString(), message, {
+          await bot.sendMessage(phone, message, {
                  media: mediaUrl
           })
           //await bot.sendMessage(process.env.FRIENDNUMBER.toString(), 'mensaje tukusito!', {})
-        res.end('esto es del server de polka')
+        res.end('Mensaje enviado al número:' + phone)
         }));
     }
    
