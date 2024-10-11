@@ -8,7 +8,8 @@ import { BaileysProvider, handleCtx } from '@bot-whatsapp/provider-baileys'
  */
 const main = async () => {
 
-  const provider = createProvider(BaileysProvider)
+  const provider = createProvider(BaileysProvider);
+  const fechaActual = new Date();
 
   provider.initHttpServer(3002)
 
@@ -35,6 +36,7 @@ const main = async () => {
 
         }
 
+        console.log(`[${fechaActual}][Mensaje enviado] - ${phone}`);
         res.end('Mensaje enviado correctamente a:' + phone);
 
       } catch (error) {
