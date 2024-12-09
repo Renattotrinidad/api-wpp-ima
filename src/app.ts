@@ -11,7 +11,7 @@ const main = async () => {
   const provider = createProvider(BaileysProvider);
   const fechaActual = new Date();
 
-  provider.initHttpServer(3002)
+  provider.initHttpServer(3003)
 
   if (provider.http) {
     // Aquí puedes utilizar la propiedad "http" sin que se produzca un error
