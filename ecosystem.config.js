@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: "api-wpp-ega",
+            name: "api-wpp-ima",
             script: "dist/app.js",
             watch: false,
             max_memory_restart: '1000M',
